@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>document1</title>
+    </head>
+    <body>
+        <h2>leap year</h2>
+        <p>click the button to demonstrate the prompt box</p>
+        <button onclick="myFunction()">try it</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                let year = prompt("please enter the year");
+                if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)){
+                    document.getElementById("demo").innerHTML = "hello this" + year + "is a leap year";
+                }
+                else{
+                    document.getElementById("demo").innerHTML = "hello this" + year + "is not a leap year";
+                }
+            }
+            </script>
+    </body>
+</html>
